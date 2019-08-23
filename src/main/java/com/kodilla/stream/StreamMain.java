@@ -6,8 +6,8 @@ import com.kodilla.stream.forumuser.ForumUser;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
+
 
 public class StreamMain {
     public static void main(String[] args) {
