@@ -1,5 +1,6 @@
 package com.kodilla.stream;
 
+import com.kodilla.stream.beautifier.PoemBeautifier;
 import com.kodilla.stream.forumuser.Forum;
 import com.kodilla.stream.forumuser.ForumUser;
 
@@ -21,5 +22,14 @@ public class StreamMain {
         theResultMapOfForumUsers.entrySet().stream()
                 .map(entry -> entry.getKey() + ":" + entry.getValue())
                 .forEach(System.out::println);
+
+//        Rozwiązanie zadania 7.1
+        PoemBeautifier poemBeautifier = new PoemBeautifier();
+        System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> a.toUpperCase())));
+        System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> a + "ABC")));
+        System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> "ABC" + a)));
+        System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> a.toLowerCase())));
+        System.out.println(poemBeautifier.beautify("I'm sexy and i know it ",(a ->  a + a)));
+
     }
 }
