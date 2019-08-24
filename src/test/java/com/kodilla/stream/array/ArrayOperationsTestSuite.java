@@ -3,10 +3,6 @@ package com.kodilla.stream.array;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class ArrayOperationsTestSuite {
 
     @Test
@@ -15,9 +11,9 @@ public class ArrayOperationsTestSuite {
 
         double average = 0;
         for (int value : intList) {
-            average = average + value;
+            average += value;
         }
-        average = average / intList.length;
+        average /= intList.length;
         double average2 = ArrayOperations.getAverage(intList);
 
         Assert.assertEquals(average,average2,0);
