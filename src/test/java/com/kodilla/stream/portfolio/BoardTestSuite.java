@@ -70,10 +70,9 @@ public class BoardTestSuite {
         project.addTaskList(taskListDone);
         return project;
     }
-
     @Test
     public void testAddTaskList() {
-        //Given
+        //Give
         Board project = prepareTestData();
         //When
 
@@ -118,7 +117,6 @@ public class BoardTestSuite {
     public void testAddTaskListFindLongTasks() {
         //Given
         Board project = prepareTestData();
-
         //When
         List<TaskList> inProgressTasks = new ArrayList<>();
         inProgressTasks.add(new TaskList("In progress"));
