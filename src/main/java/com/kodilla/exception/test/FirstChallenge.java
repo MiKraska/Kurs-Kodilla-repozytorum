@@ -25,7 +25,5 @@ public class FirstChallenge {
         } finally {
             System.out.println("Someting need to be here");
         }
-
-
     }
 }
