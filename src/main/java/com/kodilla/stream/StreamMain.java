@@ -30,6 +30,5 @@ public class StreamMain {
         System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> "ABC" + a)));
         System.out.println(poemBeautifier.beautify("I'm sexy and i know it",(a -> a.toLowerCase())));
         System.out.println(poemBeautifier.beautify("I'm sexy and i know it ",(a ->  a + a)));
-
     }
 }
