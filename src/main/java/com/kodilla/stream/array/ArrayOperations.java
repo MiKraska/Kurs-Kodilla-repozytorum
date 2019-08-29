@@ -18,6 +18,7 @@ public interface ArrayOperations {
                 .map(a -> a = list.get(a))
                 .average()
                 .getAsDouble();
+
 //        Arrays.stream(numbers)
 //                .forEach(System.out::println);
 //
